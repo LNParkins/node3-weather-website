@@ -1,4 +1,3 @@
-console.log('Client side JavaScript file is loaded')
 
 // Client Side JavaScript
 // Weather App Page
