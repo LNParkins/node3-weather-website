@@ -9,7 +9,7 @@ const forecast = (longitude, latitude, callback) => {
         } else if (body.error) {
             callback('Unable to connect to find location.', undefined);
         } else {
-            callback(undefined, body.current.weather_descriptions[0] + '. It currently is ' + body.current.temperature + ' degrees out.' + ' But it feels like ' + body.current.feelslike + ' degrees out.');
+            callback(undefined, body.current.weather_descriptions[0] + '. It currently is ' + body.current.temperature + ' degrees out.' + ' But it feels like ' + body.current.feelslike + ' degrees out. ' + 'Local time ' + body.location.localtime);
         }
     })
 }
